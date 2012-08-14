@@ -1,0 +1,14 @@
+<package>
+  <description brief="auxos_messages">
+
+     auxos_messages
+
+  </description>
+  <author>David Hodo</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/messages</url>
+
+</package>
+
+
