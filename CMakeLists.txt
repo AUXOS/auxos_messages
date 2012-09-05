@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 2.8)
-project(auxos_msgs)
+project(auxos_messages)
 
-find_package(catkin REQUIRED COMPONENTS genmsg)
+find_package(catkin REQUIRED)
+find_package(ROS REQUIRED COMPONENTS genmsg std_msgs)
 
 catkin_stack()
-catkin_project(std_msgs
-  INCLUDE_DIRS include)
+
+project(auxos_messages)
+find_package(ROS REQUIRED COMPONENTS geometry_msgs)
 
 add_message_files(
   DIRECTORY msg
@@ -16,12 +18,17 @@ add_message_files(
   StampedPathError.msg
 )
 
-generate_messages(DEPENDENCIES std_msgs)
+add_service_files(
+  DIRECTORY srv
+  FILES control.srv)
 
-install(FILES 
-  include/auxos_msgs/Encoders.h
-  include/auxos_msgs/PathError.h
-  include/auxos_msgs/StampedEncoders.h
-  include/auxos_msgs/StampedPathError.h
-  DESTINATION ${PROJECT_INCLUDE_DESTINATION}
-)
+generate_messages(DEPENDENCIES std_msgs geometry_msgs)
+
+catkin_project(${PROJECT_NAME})
+
+# install all manifests
+#install_matching_to_share(manifest.xml)
+
+install(FILES stack.xml
+        DESTINATION share/common_msgs)
+

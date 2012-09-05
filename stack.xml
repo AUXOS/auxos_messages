@@ -1,0 +1,14 @@
+<stack>
+  <name>auxos_messages</name>
+  <version>0.1</version>
+  <description>AUXOS ROS Message</description>
+  <author email="david.hodo@gmail.com">David Hodo</author>
+  <license>BSD</license>  
+  <copyright>IS4S</copyright>
+
+  <build_depends>catkin</build_depends>
+  <build_depends>genmsg</build_depends>
+  <build_depends>langs-dev</build_depends>
+
+  <depends>langs</depends>
+</stack>
