@@ -5,10 +5,12 @@
 
   </description>
   <author>David Hodo</author>
-  <license>BSD</license>
+  <license>IS4S</license>
   <review status="unreviewed" notes=""/>
   <url>http://ros.org/wiki/messages</url>
+  <export>
+    <cpp cflags="`PKG_CONFIG_PATH=${prefix}/../../lib/pkgconfig pkg-config --cflags auxos_msgs`"
+         lflags="`PKG_CONFIG_PATH=${prefix}/../../lib/pkgconfig pkg-config --libs auxos_msgs`"/>
+  </export>
 
 </package>
-
-
