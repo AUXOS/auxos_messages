@@ -12,15 +12,18 @@ find_package(ROS REQUIRED COMPONENTS geometry_msgs)
 add_message_files(
   DIRECTORY msg
   FILES
+  DubinsPath.msg
+  DubinsSegment.msg
+  PathResult.msg
   Encoders.msg
   PathError.msg
-  StampedEncoders.msg
-  StampedPathError.msg
+  EncodersStamped.msg
+  PathErrorStamped.msg
 )
 
-add_service_files(
-  DIRECTORY srv
-  FILES control.srv)
+#add_action_files(
+#  DIRECTORY action
+#  FILES DubinsMoveBase.action)
 
 generate_messages(DEPENDENCIES std_msgs geometry_msgs)
 
