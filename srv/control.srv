@@ -1,5 +1,0 @@
-bool control_running
-bool control_paused
----
-bool control_running
-bool control_paused
