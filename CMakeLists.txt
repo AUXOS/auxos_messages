@@ -1,7 +1,7 @@
 
 cmake_minimum_required(VERSION 2.8)
 project(auxos_messages)
-find_package(catkin REQUIRED COMPONENTS genmsg std_msgs geometry_msgs rostime roscpp_serialization roscpp_traits cpp_common # serialization stuff
+find_package(catkin REQUIRED COMPONENTS genmsg actionlib_msgs std_msgs geometry_msgs rostime roscpp_serialization roscpp_traits cpp_common # serialization stuff
   roscpp rosconsole xmlrpcpp )
 catkin_stack()
 catkin_project(${PROJECT_NAME})
@@ -27,7 +27,7 @@ add_action_files(
 	FollowDubinsSegment.action)
 
 
-generate_messages(DEPENDENCIES std_msgs geometry_msgs)
+generate_messages(DEPENDENCIES std_msgs geometry_msgs actionlib_msgs)
 
 # install all manifests
 install(FILES stack.xml
