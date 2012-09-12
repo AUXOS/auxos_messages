@@ -1,5 +1,5 @@
 #define the goal
-DubinsPath segment
+DubinsPath path
 ---
 # define the result
 PathResult result
