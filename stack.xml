@@ -6,7 +6,7 @@
   <license>Copyright 2012 - IS4S - All Rights Reserved</license>
   <review status="experimental" notes="" />
   <depend stack="ros" />
-  <depend package="actionlib_msgs"/>
+  <depend stack="actionlib"/>
 
 
 </stack>
