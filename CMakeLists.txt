@@ -1,8 +1,7 @@
-
 cmake_minimum_required(VERSION 2.8)
 project(auxos_messages)
 find_package(catkin REQUIRED)
-find_package(ROS REQUIRED COMPONENTS genmsg actionlib_msgs std_msgs geometry_msgs)
+find_package(ROS REQUIRED COMPONENTS genmsg actionlib_msgs std_msgs geometry_msgs nav_msgs)
 catkin_stack()
 #catkin_python_setup()
 
@@ -26,7 +25,7 @@ add_action_files(
 	FollowDubinsSegment.action)
 
 
-generate_messages(DEPENDENCIES std_msgs geometry_msgs actionlib_msgs)
+generate_messages(DEPENDENCIES std_msgs geometry_msgs actionlib_msgs nav_msgs)
 
 catkin_project(${PROJECT_NAME})
 
