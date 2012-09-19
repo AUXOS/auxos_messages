@@ -1,10 +1,9 @@
 
 cmake_minimum_required(VERSION 2.8)
 project(auxos_messages)
-find_package(catkin REQUIRED COMPONENTS genmsg actionlib_msgs std_msgs geometry_msgs rostime roscpp_serialization roscpp_traits cpp_common # serialization stuff
-  roscpp rosconsole xmlrpcpp )
+find_package(catkin REQUIRED)
+find_package(ROS REQUIRED COMPONENTS genmsg actionlib_msgs std_msgs geometry_msgs)
 catkin_stack()
-catkin_project(${PROJECT_NAME})
 #catkin_python_setup()
 
 
@@ -29,6 +28,10 @@ add_action_files(
 
 generate_messages(DEPENDENCIES std_msgs geometry_msgs actionlib_msgs)
 
+catkin_project(${PROJECT_NAME})
+
 # install all manifests
+install_matching_to_share(manifest.xml)
+
 install(FILES stack.xml
         DESTINATION share/common_msgs)
