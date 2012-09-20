@@ -22,6 +22,7 @@ add_action_files(
 	DIRECTORY action 
 	FILES
 	FollowDubinsPath.action
+	PlanThenFollowDubinsPath.action
 	FollowDubinsSegment.action)
 
 
