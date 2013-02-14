@@ -4,6 +4,7 @@
       ROS messages needed by the AUXOS system
   </description>
   <author>David Hodo</author>
+  <version>0.1</version>
   <license>Copyright 2012 - IS4S - All Rights Reserved</license>
   <review status="experimental" notes="" />
   <depend stack="ros" />
