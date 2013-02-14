@@ -1,4 +1,5 @@
 <stack>
+  <name>auxos_messages</name>
   <description brief="AUXOS Messages">
       ROS messages needed by the AUXOS system
   </description>
