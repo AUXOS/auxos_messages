@@ -5,6 +5,7 @@
   </description>
   <author>David Hodo</author>
   <version>0.1</version>
+  <copyright>Copyright 2012 - IS4S - All Rights Reserved</copyright>
   <license>Copyright 2012 - IS4S - All Rights Reserved</license>
   <review status="experimental" notes="" />
   <depend stack="ros" />
