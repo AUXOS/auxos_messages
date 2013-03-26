@@ -29,6 +29,8 @@ add_message_files(
   FILES
   DubinsPath.msg
   DubinsSegment.msg
+  EmData.msg
+  EmDataStamped.msg
   Encoders.msg
   EncodersStamped.msg  
   PathError.msg
