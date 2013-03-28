@@ -36,6 +36,7 @@ add_message_files(
   PathError.msg
   PathErrorStamped.msg
   PathResult.msg
+  LogNotes.msg
 )
 
 # Generate added messages and services with any dependencies listed here
