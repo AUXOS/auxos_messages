@@ -22,6 +22,7 @@ add_action_files(
   FollowDubinsPath.action
   FollowDubinsSegment.action
   PlanThenFollowDubinsPath.action
+  TopicLogger.action
 )
 
 ## Generate messages in the 'msg' folder
