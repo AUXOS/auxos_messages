@@ -4,8 +4,8 @@ string ID
 string[] selectedTopics
 ---
 #result definition
-string downloadURL
-string target_filename
+string write_filename
 ---
 #feedback
 float32 filesize
+string target_filename
