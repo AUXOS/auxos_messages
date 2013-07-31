@@ -1,11 +1,13 @@
 #goal definition
-string command
 string ID
-string[] selectedTopics
 ---
 #result definition
 string write_filename
+float32 filesize
+uint64 disk_space
+
 ---
 #feedback
 float32 filesize
+uint64 disk_space
 string target_filename
