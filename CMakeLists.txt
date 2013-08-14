@@ -40,6 +40,12 @@ add_message_files(
   LogNotes.msg
 )
 
+# Generate services in the 'srv' folder
+add_service_files(
+  FILES
+  uuid.srv
+)
+
 # Generate added messages and services with any dependencies listed here
 generate_messages(
   DEPENDENCIES
