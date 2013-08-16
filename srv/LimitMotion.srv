@@ -1,0 +1,11 @@
+#request motion limit
+bool allow_left
+bool allow_right
+bool allow_forward
+bool allow_reverse
+---
+#response motion limit
+bool left_allowed
+bool right_allowed
+bool forward_allowed
+bool reverse_allowed
