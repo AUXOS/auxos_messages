@@ -1,0 +1,5 @@
+#request uuid
+bool lock_index
+---
+#response uuid
+bool index_locked
