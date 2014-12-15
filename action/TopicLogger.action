@@ -3,6 +3,7 @@ string ID
 ---
 #result definition
 string write_filename
+uint64 disk_space
 ---
 #feedback
 float32 filesize
