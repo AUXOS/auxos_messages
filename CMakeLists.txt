@@ -38,6 +38,7 @@ add_message_files(
   PathErrorStamped.msg
   PathResult.msg
   LogNotes.msg
+  Rmp440Command.msg
 )
 
 # Generate services in the 'srv' folder
